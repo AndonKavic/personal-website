@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>This is a title</title>
-<style>
-/*this is how you link to an external CSS file: <link rel="stylesheet" href="styles.css">*/
-body {
-  background-color: #c5e2ff;
-}
-p {
-	padding-left: 10px;
-}
-hr {
-	color: #000000;
-}
-li {
-	padding: 2px;
-	margin-left: 26px;
-}
+	<title>This is a title</title>
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+	<style>
+	/*this is how you link to an external CSS file: <link rel="stylesheet" href="styles.css">*/
+		body {
+		  background-color: #c5e2ff;
+		}
+		p {
+			padding-left: 10px;
+		}
+		hr {
+			color: #000000;
+		}
+		li {
+			padding: 2px;
+			margin-left: 26px;
+		}
+		table{
+			padding-left: 10px;
+		}
+		th {
+			padding-bottom: 5px;
+		}
+		tr, td {
+			padding-bottom: 2px;
+			padding-left: 8px;
+			padding-right: 8px;
+		}
 
-</style>
+	</style>
 </head>
 <body>
 
 <h1 style="background-color:tomato;font-family:verdana;text-align:center;">This is a Heading</h1>
-	<p title="I'm a tooltip" style="text-align:center;">This is a paragraph3.</p>
+	<p title="I'm a tooltip" style="text-align:center;">This is a paragraph.</p>
 
 	<p style="color:red;font-size:60px;">This paragraph is red, and big!</p>
 
@@ -35,14 +47,17 @@ li {
 <hr>
 
 <p>I made this:</p>
-<pre style="font-size: 120%; border: 2px solid Black">
-	Here is a short rhyme.
+<pre style="width: 500px; height: 357px; font-size: 20px; text-align: var(); border: 2px solid Black;
+			background-repeat: no-repeat; background-size: contain; background-image: url('images/NewLeaf.jpg'); ">
 
-	That I made today.
 
-	It doesn't hold meaning,
+    Here is a short rhyme.
 
-	but that's okay.
+    That I made today.
+
+    It doesn't hold meaning,
+
+    but that's okay.
 </pre>
 
 <p><b>Here is some bold text</b></p>
@@ -61,7 +76,7 @@ li {
 
 <p>Here is an internal image:</p>
 
-	<img src="Face.jpg" alt="Face" width="256" height="128">
+	<img src="images/Face.jpg" alt="Face" width="256" height="128">
 
 <p>Here is an external image:</p>
 
@@ -154,10 +169,10 @@ For 60 years, <abbr title="World Wild Life">WWF</abbr> has worked to help people
 
 	<p>by using the <code style="color:crimson">id</code> atttibute, we can assign a bookmark to any HTML element</p>
 
-	<p>appending #Value to a link, where Value corresponds to the bookmark Value, it will automatically
+	<p>appending <i>#value</i> to a link, where <i>value</i> corresponds to the value of the id, it will automatically
 	take the user directly to the HTML element on a webpage.</p>
 
-	<p>As an example: <a href="Index.html#Bookmarks">Index.html#Bookmarks</a></p>
+	<p>As an example: <a href="index.html#bookmarks">index.html#Bookmarks</a></p>
 
 	<hr>
 
@@ -166,11 +181,50 @@ For 60 years, <abbr title="World Wild Life">WWF</abbr> has worked to help people
 		<a href="html/yippie.html" style="padding-left:10px;" target="_blank" title="Click this link!">Click me!</a>
 
 	<p>They can be images:</p>
+
+	<p>
 		<a href="html/yippie.html" target="_blank">
-		<img src="image/click me.png" alt="Text saying click me" width=300 height=100></a>
+			<img src="images/click me.png" alt="Text saying click me" style="float: left; width: 300px; height: 100px;">
+		</a>
+		<br>
+		<br>
+		<code style="font-size: larger">&lt;-- Click it!!!</code>
+		<br>
+		<br>
+		<br>
+	</p>
 
 	<p>They can be buttons with javascript</p>
 		<button onclick="document.location='html/yippie.html'">Click Me</button>
+
+	<hr>
+
+	<h2 id="tables">Tables</h2>
+
+	<p>Here is a simple table</p>
+
+	<table style="border: double; border-spacing: 5px">
+		<tr>
+			<th>Activity</th>
+			<th>Fun</th>
+			<th>Skill</th>
+		</tr>
+		<tr>
+			<td>Swimming</td>
+			<td>It is fun</td>
+			<td>I'm okay at it</td>
+		</tr>
+		<tr>
+			<td>Dancing</td>
+			<td>I love it</td>
+			<td>Getting the hang of it</td>
+		</tr>
+		<tr>
+			<td>Hiking</td>
+			<td>It's okay</td>
+			<td>Not a problem</td>
+		</tr>
+	</table>
 
 	<hr>
 
@@ -208,7 +262,7 @@ For 60 years, <abbr title="World Wild Life">WWF</abbr> has worked to help people
 <h2>Notepad++</h2>
 
 	<p>For windows, I started by setting up notepad++ for my choice of website editor.
-		It is lightweight, and does it job.
+		It is lightweight, and does its job.
 		Here are some preference settings I changed:</p>
 
 	<p>Settings → Preferences → Auto-Completion → html/xml close tag.</p>
@@ -230,7 +284,7 @@ For 60 years, <abbr title="World Wild Life">WWF</abbr> has worked to help people
 		There also seems to be some automatic indentation, which is super helpful,
 		as I don't know the correct convension for HTML code.</p>
 
-	<p>It also seems to have Git support for version control built in? That is really nice, wow.</p>
+	<p>It also seems to have Git support for version control built in? That is really nice, wow. 😳</p>
 
 
 <br><br>
