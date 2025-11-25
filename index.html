@@ -1,54 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<title>This is a title</title>
-	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-	<style>
-	/*this is how you link to an external CSS file: <link rel="stylesheet" href="styles.css">*/
-		body {
-		  background-color: #c5e2ff;
-		}
-		p {
-			padding-left: 10px;
-		}
-		hr {
-			color: #000000;
-		}
-		li {
-			padding: 2px;
-			margin-left: 26px;
-		}
-		table{
-			padding-left: 10px;
-		}
-		th {
-			padding-bottom: 5px;
-		}
-		tr, td {
-			padding-bottom: 2px;
-			padding-left: 8px;
-			padding-right: 8px;
-		}
+	<head>
+		<title>This is a title</title>
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+		<style>
+			/*this is how you link to an external CSS file: <link rel="stylesheet" href="styles.css">*/
+			body {
+				background-color: #c5e2ff;
+			}
+			p {
+				padding-left: 10px;
+			}
+			hr {
+				color: #000000;
+			}
+			li {
+				padding: 2px;
+				margin-left: 26px;
+			}
+			table {
+				padding-left: 10px;
+			}
+			th {
+				padding-bottom: 5px;
+			}
+			tr,
+			td {
+				padding-bottom: 2px;
+				padding-left: 8px;
+				padding-right: 8px;
+			}
+			span.code {
+				color: crimson;
+				background-color: azure;
+				padding-left: 3px;
+				padding-right: 3px;
+			}
+			div.mycontainer {
+				width: 100%;
+				overflow: auto;
+			}
+			div.mycontainer div {
+				width: 33%;
+				float: left;
+			}
+			div.flexcontainer {
+				display: flex;
+			}
+			div.flexcontainer > div {
+				width: 33%;
+			}
+			.grid-container {
+				display: grid;
+				grid-template-columns: 33% 33% 33%;
+			}
+			.city {
+				background-color: tomato;
+				color: white;
+				border: 2px solid black;
+				margin: 20px;
+				padding: 20px;
+			}
+			button.testbtn {
+				background-color: #1ab43e;
+				color: white;
+				font-size: 12px;
+				padding: 12px;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+			button.testbtn:hover {
+				background-color: #198d34;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 style="background-color: tomato; font-family: verdana; text-align: center">This is a Heading</h1>
+		<p title="I'm a tooltip" style="text-align: center">This is a paragraph.</p>
 
-	</style>
-</head>
-<body>
+		<p style="color: red; font-size: 60px">This paragraph is red, and big!</p>
 
-<h1 style="background-color:tomato;font-family:verdana;text-align:center;">This is a Heading</h1>
-	<p title="I'm a tooltip" style="text-align:center;">This is a paragraph.</p>
+		<a href="#bookmarks" style="padding-left: 10px">Bookmarks</a>
+		<br /><br />
 
-	<p style="color:red;font-size:60px;">This paragraph is red, and big!</p>
+		<a href="https://www.w3schools.com" style="padding-left: 10px"
+			>This is a link to my current learning resource.</a
+		>
 
-	<a href="#bookmarks" style="padding-left: 10px;">Bookmarks</a>
-	<br><br>
+		<hr />
 
-<a href="https://www.w3schools.com" style="padding-left: 10px;">This is a link to my current learning resource.</a>
-
-<hr>
-
-<p>I made this:</p>
-<pre style="width: 500px; height: 357px; font-size: 20px; text-align: var(); border: 2px solid Black;
-			background-repeat: no-repeat; background-size: contain; background-image: url('images/NewLeaf.jpg'); ">
+		<p>I made this:</p>
+		<pre
+			style="
+				width: 500px;
+				height: 357px;
+				font-size: 20px;
+				text-align: var();
+				border: 2px solid Black;
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-image: url(&quot;images/NewLeaf.jpg&quot;);
+			">
 
 
     Here is a short rhyme.
@@ -58,239 +111,387 @@
     It doesn't hold meaning,
 
     but that's okay.
-</pre>
+</pre
+		>
+		<p><b>Here is some bold text</b></p>
+		<p><strong>And here is something important! (looks the same)</strong></p>
 
-<p><b>Here is some bold text</b></p>
-<p><strong>And here is something important! (looks the same)</strong></p>
+		<p style="border: 3px solid #1d1d30"></p>
+		<p style="background-color: rgb(255, 99, 71)">RGB(255, 99, 71)</p>
+		<p style="background-color: #ff6347">HEX: #ff6347</p>
+		<p style="background-color: hsl(9, 100%, 64%)">HSL(9, 100%, 64%)</p>
 
-<p style="border:3px solid #1d1d30;"></p>
+		<p style="background-color: rgba(255, 99, 71, 0.5)">RGBA(255, 99, 71, 0.5)</p>
+		<p style="background-color: hsla(9, 100%, 64%, 0.2)">HSLA(9, 100%, 64%, 0.2)</p>
 
-<p style="background-color:rgb(255, 99, 71);">RGB(255, 99, 71)</p>
-<p style="background-color:#ff6347;">HEX: #ff6347</p>
-<p style="background-color:hsl(9, 100%, 64%);">HSL(9, 100%, 64%)</p>
+		<hr />
+		<p>Here is an internal image:</p>
 
-<p style="background-color:rgba(255, 99, 71, 0.5);">RGBA(255, 99, 71, 0.5)</p>
-<p style="background-color:hsla(9, 100%, 64%, 0.2);">HSLA(9, 100%, 64%, 0.2)</p>
+		<img src="images/Face.jpg" alt="Face" width="256" height="128" />
+		<p>Here is an external image:</p>
 
-<hr>
+		<!-- Who's to say when this external link fails? -->
+		<img src="https://www.w3schools.com/html/img_girl.jpg" alt="Girl with a jacket" width="250" height="300" />
 
-<p>Here is an internal image:</p>
+		<hr />
+		<p>
+			Here is some text I copied
+			<a href="https://www.w3schools.com/html/html_quotation_elements.asp"><sup>1</sup></a>
+			:
+		</p>
+		<blockquote cite="http://www.worldwildlife.org/who/index.html">
+			For 60 years, <abbr title="World Wild Life">WWF</abbr> has worked to help people and nature thrive. As the
+			world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate
+			with people around the world to develop and deliver innovative solutions that protect communities, wildlife,
+			and the places in which they live.
+		</blockquote>
 
-	<img src="images/Face.jpg" alt="Face" width="256" height="128">
-
-<p>Here is an external image:</p>
-
-	<!-- Who's to say when this external link fails? -->
-	<img src="https://www.w3schools.com/html/img_girl.jpg" alt="Girl with a jacket" width="250" height="300">
-
-<hr>
-
-<p>Here is some text I copied
-	<a href="https://www.w3schools.com/html/html_quotation_elements.asp"><sup>1</sup></a>
-	:
-</p>
-
-<blockquote cite="http://www.worldwildlife.org/who/index.html">
-For 60 years, <abbr title="World Wild Life">WWF</abbr> has worked to help people and nature thrive.
- As the world's leading conservation organization, WWF works in nearly 100 countries.
- At every level, we collaborate with people around the world to develop and deliver
- innovative solutions that protect communities, wildlife, and the places in which they live.
-</blockquote>
-
-<!-- use &lt as a subtitude for < and &gt as a substitude for > when writing html tags inside <code> blocks -->
-<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
-
-<p cite="https://www.w3schools.com/html/html_quotation_elements.asp">BDO means Bi-Directional Override. The HTML
-	<code style="color:Crimson">&lt;bdo&gt;</code> tag is used to override the current text direction:</p>
-
-<code>&lt;bdo dir="rtl&lt;This Text will be written from right to left&lt;/bdo&gt;</code>
-
-<br>
-<bdo dir="rtl">This Text will be written from right to left</bdo>
-
-<br><br>
-<a href=https://www.w3schools.com/colors/colors_names.asp style="padding-left:10px;">
-	Here is a link to all 140 HTML colour names</a>
-
-	<hr>
-
-	<p cite="https://www.w3schools.com/html/html_css.asp">CSS can be added to HTML documents in 3 ways:</p>
-
-	<ul>
-		<li>
-			<b>Inline</b>
-			- by using the
-			<code style="color:Crimson">style</code>
-		attribute inside HTML elements
-		</li>
-		<li>
-			<b>Internal</b>
-			- by using a
-			<code style="color:Crimson">&lt;style&gt;</code>
-			element in the
-			<code style="color:Crimson">&lt;head&gt;</code>
-			section
-		</li>
-		<li>
-			<b>External</b>
-			- by using a
-			<code style="color:Crimson">&lt;link&gt;</code>
-			element to link to an external CSS file
-		</li>
-	</ul>
-
-	<hr>
-
-	<p cite="https://www.w3schools.com/html/html_links.asp">To change where to open the linked document, use
-		<code style="Crimson">Target=""</code></p>
-	<ul>
-		<li>
-			<code style="color:Crimson">_self</code>
-			 - Default. Opens the document in the same window/tab as it was clicked
-		</li>
-		<li>
-			<code style="color:Crimson">_blank</code>
-			- Opens the document in a new window or tab
-		</li>
-		<li>
-			<code style="color:Crimson">_parent</code>
-			- Opens the document in the parent frame
-		</li>
-		<li>
-			<code style="color:Crimson">_top</code>
-			- Opens the document in the full body of the window
-		</li>
-	</ul>
-
-	<hr>
-
-<h3 id="bookmarks">Bookmarks</h3>
-	<p>Bookmarks are helpful for linking directly to a relevant section of a webpage.</p>
-
-	<p>by using the <code style="color:crimson">id</code> atttibute, we can assign a bookmark to any HTML element</p>
-
-	<p>appending <i>#value</i> to a link, where <i>value</i> corresponds to the value of the id, it will automatically
-	take the user directly to the HTML element on a webpage.</p>
-
-	<p>As an example: <a href="index.html#bookmarks">index.html#Bookmarks</a></p>
-
-	<hr>
-
-<h3>Different ways to modify links</h3>
-	<p>Links can have tooltips:</p>
-		<a href="html/yippie.html" style="padding-left:10px;" target="_blank" title="Click this link!">Click me!</a>
-
-	<p>They can be images:</p>
-
-	<p>
-		<a href="html/yippie.html" target="_blank">
-			<img src="images/click me.png" alt="Text saying click me" style="float: left; width: 300px; height: 100px;">
-		</a>
-		<br>
-		<br>
-		<code style="font-size: larger">&lt;-- Click it!!!</code>
-		<br>
-		<br>
-		<br>
-	</p>
-
-	<p>They can be buttons with javascript</p>
-		<button onclick="document.location='html/yippie.html'">Click Me</button>
-
-	<hr>
-
-	<h2 id="tables">Tables</h2>
-
-	<p>Here is a simple table</p>
-
-	<table style="border: double; border-spacing: 5px">
-		<tr>
-			<th>Activity</th>
-			<th>Fun</th>
-			<th>Skill</th>
-		</tr>
-		<tr>
-			<td>Swimming</td>
-			<td>It is fun</td>
-			<td>I'm okay at it</td>
-		</tr>
-		<tr>
-			<td>Dancing</td>
-			<td>I love it</td>
-			<td>Getting the hang of it</td>
-		</tr>
-		<tr>
-			<td>Hiking</td>
-			<td>It's okay</td>
-			<td>Not a problem</td>
-		</tr>
-	</table>
-
-	<hr>
-
-<h1 id="general-information">General Information</h1>
-	<p><b>HTML</b> (Hypertext Markup Language) is the standard markup language used
-		to create the basic structure of a web page. It provides the framework for adding
-		text, images, links, headings, lists, and other content on a webpage. HTML uses "tags"
-		to define each element, setting up the content’s hierarchy and layout. HTML is the starting
-		point for any website and is essential for creating a cohesive, accessible structure that can
-		be styled and enhanced by other web technologies like CSS and JavaScript.
-	</p>
-	<p><b>CSS</b> (Cascading Style Sheets) is a styling language used to apply color, fonts, spacing, and
-		layout to an HTML structure, transforming it into a visually appealing design. By controlling
-		these aspects, CSS allows you to create consistent styles across all elements on the page,
-		making your website more engaging and user-friendly.
-	</p>
-	<p><b>JavaScript</b> (JS) is a programming language that enables dynamic,
-		interactive features on a webpage. With JavaScript, you can add functionality like button actions,
-		form submissions, interactive animations, and real-time content updates. This makes the website
-		feel more responsive and engaging, enhancing the user experience.
-	</p>
-
-<p><a href="https://tadabase.io/blog/html-css-javascript-explained">
-	https://tadabase.io/blog/html-css-javascript-explained</a> for more information.</p>
-
-<p>Using <a href="https://www.w3schools.com/html/default.asp">
-	https://www.w3schools.com/html/default.asp</a> for learning about HTML, CSS and Javascript.</p>
-
-<p><a href="https://notepad-plus-plus.org/">Notepad++</a>
-	simple text editor for windows, as I can use it on my work laptop.</p>
-
-<p><a href="https://phcode.io/">Phoenix Code</a>
-	text editor for all platforms, focuses on web development. Really cool!</p>
-
-<h2>Notepad++</h2>
-
-	<p>For windows, I started by setting up notepad++ for my choice of website editor.
-		It is lightweight, and does its job.
-		Here are some preference settings I changed:</p>
-
-	<p>Settings → Preferences → Auto-Completion → html/xml close tag.</p>
-	<p>Settings → Preferences → Dark Mode → Dark mode.</p>
-	<p>Move selected text up or down: CTRL + Shift + Up or Down.</p>
-
-<h2>Phoenix Code</h2>
-
-	<p>For linux, if I can avoid it, i'd rather use something that works natively,
-		instead of using a compatibility layer like Wine.
+		<!-- use &lt as a subtitude for < and &gt as a substitude for > when writing html tags inside <code> blocks -->
+		<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+		<p cite="https://www.w3schools.com/html/html_quotation_elements.asp">
+			BDO means Bi-Directional Override. The HTML <code style="color: Crimson">&lt;bdo&gt;</code> tag is used to
+			override the current text direction:
 		</p>
 
-	<p>Phoenix Code is really cool for this. With its live code editing,
-		now I don't have to constantly refresh the page to see my edits!
-	It makes it so easy, I feel like I don't have to worry about customizing it for optimal productivity;
-		Useful, as I don't know what an optimal setup would look like at my skill level.</p>
+		<code>&lt;bdo dir="rtl&lt;This Text will be written from right to left&lt;/bdo&gt;</code>
+		<br />
+		<bdo dir="rtl">This Text will be written from right to left</bdo>
 
-	<p>It also autocompletes as I would expect, and lists HTML problems I wouldn't recognize as a novice.
-		There also seems to be some automatic indentation, which is super helpful,
-		as I don't know the correct convension for HTML code.</p>
+		<br /><br />
+		<a href="https://www.w3schools.com/colors/colors_names.asp" style="padding-left: 10px">
+			Here is a link to all 140 HTML colour names</a
+		>
 
-	<p>It also seems to have Git support for version control built in? That is really nice, wow. 😳</p>
+		<hr />
 
+		<p cite="https://www.w3schools.com/html/html_css.asp">CSS can be added to HTML documents in 3 ways:</p>
 
-<br><br>
-<address>
-	Written by Anon.<br>
-</address>
+		<ul>
+			<li>
+				<b>Inline</b>
+				- by using the
+				<code style="color: Crimson">style</code>
+				attribute inside HTML elements
+			</li>
+			<li>
+				<b>Internal</b>
+				- by using a
+				<code style="color: Crimson">&lt;style&gt;</code>
+				element in the
+				<code style="color: Crimson">&lt;head&gt;</code>
+				section
+			</li>
+			<li>
+				<b>External</b>
+				- by using a
+				<code style="color: Crimson">&lt;link&gt;</code>
+				element to link to an external CSS file
+			</li>
+		</ul>
 
-</body>
+		<hr />
+
+		<p cite="https://www.w3schools.com/html/html_links.asp">
+			To change where to open the linked document, use <code style="Crimson">Target=""</code>
+		</p>
+		<ul>
+			<li>
+				<code style="color: Crimson">_self</code>
+				- Default. Opens the document in the same window/tab as it was clicked
+			</li>
+			<li>
+				<code style="color: Crimson">_blank</code>
+				- Opens the document in a new window or tab
+			</li>
+			<li>
+				<code style="color: Crimson">_parent</code>
+				- Opens the document in the parent frame
+			</li>
+			<li>
+				<code style="color: Crimson">_top</code>
+				- Opens the document in the full body of the window
+			</li>
+		</ul>
+
+		<hr />
+
+		<h3 id="bookmarks">Bookmarks</h3>
+		<p>Bookmarks are helpful for linking directly to a relevant section of a webpage.</p>
+
+		<p>
+			by using the <code style="color: crimson">id</code> atttibute, we can assign a bookmark to any HTML element
+		</p>
+
+		<p>
+			appending <i>#value</i> to a link, where <i>value</i> corresponds to the value of the id, it will
+			automatically take the user directly to the HTML element on a webpage.
+		</p>
+
+		<p>As an example: <a href="index.html#bookmarks">index.html#Bookmarks</a></p>
+
+		<hr />
+		<h3>Different ways to modify links</h3>
+		<p>Links can have tooltips:</p>
+		<a href="html/yippie.html" style="padding-left: 10px" target="_blank" title="Click this link!">Click me!</a>
+
+		<p>They can be images:</p>
+
+		<p>
+			<a href="html/yippie.html" target="_blank">
+				<img
+					src="images/click me.png"
+					alt="Text saying click me"
+					style="float: left; width: 300px; height: 100px" />
+			</a>
+			<br />
+			<br />
+			<code style="font-size: larger">&lt;-- Click it!!!</code>
+			<br />
+			<br />
+			<br />
+		</p>
+
+		<p>They can be buttons with javascript</p>
+		<button onclick="document.location='html/yippie.html'">Click Me</button>
+
+		<hr />
+
+		<h3 id="tables">Tables</h3>
+
+		<p>Here is a simple table</p>
+
+		<table style="border: double; border-spacing: 5px">
+			<tr>
+				<th>Activity</th>
+				<th>Fun</th>
+				<th>Skill</th>
+			</tr>
+			<tr>
+				<td>Swimming</td>
+				<td>It is fun</td>
+				<td>I'm okay at it</td>
+			</tr>
+			<tr>
+				<td>Dancing</td>
+				<td>I love it</td>
+				<td>Getting the hang of it</td>
+			</tr>
+			<tr>
+				<td>Hiking</td>
+				<td>It's okay</td>
+				<td>Not a problem</td>
+			</tr>
+		</table>
+
+		<br />
+		<hr />
+
+		<div style="width: 300px; margin: auto">
+			<h2>Margin</h2>
+			<p>Setting margin to auto is the way to center block elements in html</p>
+			<p>Make sure to also have a defined width, as to force the element to be shorter than the entire width</p>
+		</div>
+
+		<h2 style="text-align-last: center">Made using float property</h2>
+		<div class="mycontainer">
+			<div style="background-color: #75e78c">
+				<h2 style="text-align: center">HTML</h2>
+
+				<p>Used to create the content of a website</p>
+			</div>
+			<div style="background-color: #e77575">
+				<h2 style="text-align: center">CSS</h2>
+
+				<p>Used to style the content of a website</p>
+			</div>
+			<div style="background-color: #75a8e7">
+				<h2 style="text-align: center">JavaScript</h2>
+
+				<p>Used to add interactivity to a website</p>
+			</div>
+		</div>
+		<h2 style="text-align-last: center">Made using flex property</h2>
+		<div class="flexcontainer">
+			<div style="background-color: #75e78c">
+				<h2 style="text-align: center">HTML</h2>
+
+				<p>Used to create the content of a website</p>
+			</div>
+			<div style="background-color: #e77575">
+				<h2 style="text-align: center">CSS</h2>
+
+				<p>Used to style the content of a website</p>
+			</div>
+			<div style="background-color: #75a8e7">
+				<h2 style="text-align: center">JavaScript</h2>
+
+				<p>Used to add interactivity to a website</p>
+			</div>
+			<div style="background-color: #75a8e7">
+				<h2 style="text-align: center">Extra element</h2>
+
+				<p>Squeezes other elements to make space</p>
+			</div>
+		</div>
+
+		<h2 style="text-align-last: center">Made using grid property</h2>
+		<div class="grid-container">
+			<div style="background-color: #75e78c">
+				<h2 style="text-align: center">HTML</h2>
+
+				<p>Used to create the content of a website</p>
+			</div>
+			<div style="background-color: #e77575">
+				<h2 style="text-align: center">CSS</h2>
+
+				<p>Used to style the content of a website</p>
+			</div>
+			<div style="background-color: #75a8e7">
+				<h2 style="text-align: center">JavaScript</h2>
+
+				<p>Used to add interactivity to a website</p>
+			</div>
+			<div style="background-color: #75a8e7">
+				<h2 style="text-align: center">Extra element</h2>
+
+				<p>Creates a new row</p>
+			</div>
+		</div>
+
+		<br />
+		<hr />
+
+		<h2>Classes</h2>
+
+		<p>Classes are most often used for CCS styling, but can also be used by javaScript</p>
+
+		<div class="city">
+			<h2>London</h2>
+			<p>London is the capital of England</p>
+		</div>
+		<div class="city">
+			<h2>Paris</h2>
+			<p>Paris is the capital of France</p>
+		</div>
+		<div class="city">
+			<h2>Tokyo</h2>
+			<p>Tokyo is the capital of Japan</p>
+		</div>
+
+		<br />
+		<hr />
+
+		<h2>Id attribute</h2>
+
+		<p>Ids can be used like classes, but can only be assigned to one element.</p>
+		<p>
+			You can style them with CSS, and access them with JavaScript, alongside its normal
+			<a href="index.html#bookmarks">bookmark</a> function.
+		</p>
+
+		<hr />
+
+		<h3>HTML Buttons</h3>
+
+		<p>You can add buttons without interaction with html: <button>Click Me</button></p>
+
+		<p>You can also use CSS to style buttons: <button class="testbtn">Click Me</button></p>
+
+		<p>
+			The <span class="code">disabled</span> attribute will make a button unclickable:
+			<button disabled>Disabled button</button>
+		</p>
+
+		<p>Here a button that runs JavaScript on click: <button onclick="alert('Hello!')">Click Me</button></p>
+
+		<h3>There are 3 button types:</h3>
+
+		<ul>
+			<li><span class="code">type="button"</span> - A normal clickable button (does nothing by default)</li>
+			<li><span class="code">type="submit"</span> - Submits a form</li>
+			<li><span class="code">type="reset"</span> - Resets all form fields</li>
+		</ul>
+
+		<p>One should always specify the <span class="code">type</span> attribute for buttons</p>
+
+		<br />
+		<hr />
+
+		<h1 id="general-information">General Information</h1>
+		<p>
+			<b>HTML</b> (Hypertext Markup Language) is the standard markup language used to create the basic structure
+			of a web page. It provides the framework for adding text, images, links, headings, lists, and other content
+			on a webpage. HTML uses "tags" to define each element, setting up the content’s hierarchy and layout. HTML
+			is the starting point for any website and is essential for creating a cohesive, accessible structure that
+			can be styled and enhanced by other web technologies like CSS and JavaScript.
+		</p>
+		<p>
+			<b>CSS</b> (Cascading Style Sheets) is a styling language used to apply color, fonts, spacing, and layout to
+			an HTML structure, transforming it into a visually appealing design. By controlling these aspects, CSS
+			allows you to create consistent styles across all elements on the page, making your website more engaging
+			and user-friendly.
+		</p>
+		<p>
+			<b>JavaScript</b> (JS) is a programming language that enables dynamic, interactive features on a webpage.
+			With JavaScript, you can add functionality like button actions, form submissions, interactive animations,
+			and real-time content updates. This makes the website feel more responsive and engaging, enhancing the user
+			experience.
+		</p>
+		<p>
+			<a href="https://tadabase.io/blog/html-css-javascript-explained">
+				https://tadabase.io/blog/html-css-javascript-explained</a
+			>
+			for more information.
+		</p>
+
+		<p>
+			Using
+			<a href="https://www.w3schools.com/html/default.asp"> https://www.w3schools.com/html/default.asp</a> for
+			learning about HTML, CSS and Javascript.
+		</p>
+
+		<p>
+			<a href="https://notepad-plus-plus.org/">Notepad++</a> simple text editor for windows, as I can use it on my
+			work laptop.
+		</p>
+
+		<p>
+			<a href="https://phcode.io/">Phoenix Code</a> text editor for all platforms, focuses on web development.
+			Really cool!
+		</p>
+		<h2>Notepad++</h2>
+
+		<p>
+			For windows, I started by setting up notepad++ for my choice of website editor. It is lightweight, and does
+			its job. Here are some preference settings I changed:
+		</p>
+
+		<p>Settings → Preferences → Auto-Completion → html/xml close tag.</p>
+		<p>Settings → Preferences → Dark Mode → Dark mode.</p>
+		<p>Move selected text up or down: CTRL + Shift + Up or Down.</p>
+
+		<h2>Phoenix Code</h2>
+
+		<p>
+			For linux, if I can avoid it, i'd rather use something that works natively, instead of using a compatibility
+			layer like Wine.
+		</p>
+
+		<p>
+			Phoenix Code is really cool for this. With its live code editing, now I don't have to constantly refresh the
+			page to see my edits! It makes it so easy, I feel like I don't have to worry about customizing it for
+			optimal productivity; Useful, as I don't know what an optimal setup would look like at my skill level.
+		</p>
+
+		<p>
+			It also autocompletes as I would expect, and lists HTML problems I wouldn't recognize as a novice. There
+			also seems to be some automatic indentation, which is super helpful, as I don't know the correct convension
+			for HTML code.
+		</p>
+
+		<p>It also seems to have Git support for version control built in? That is really nice, wow. 😳</p>
+
+		<br /><br />
+		<address>Written by Anon.<br /></address>
+	</body>
 </html>
